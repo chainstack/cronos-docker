@@ -1,2 +1,2 @@
 # cronos-docker
-Repo for cronos docker image
+Repo that contains Dockerfile for Cronos
