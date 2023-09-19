@@ -1,7 +1,6 @@
 FROM debian:bullseye-slim
 
 RUN adduser --disabled-password --gecos "" --no-create-home --uid 1000 cronos
-
 RUN mkdir -p /home/cronos/data && mkdir -p /home/cronos/config
 RUN apt-get update -y && apt-get install wget curl procps net-tools jq lz4 -y
 
