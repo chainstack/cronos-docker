@@ -8,6 +8,6 @@ RUN cd /tmp && wget --no-check-certificate https://github.com/crypto-org-chain/c
     && rm cronos_1.4.0-rc3-testnet_Linux_x86_64.tar.gz && mv ./* /home/cronos/
 RUN chown -R cronos:cronos /home/cronos
 
-USER cronos
+USER root
 
 ENTRYPOINT ["/home/cronos/bin/cronosd"]
