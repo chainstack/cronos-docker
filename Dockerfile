@@ -12,3 +12,4 @@ RUN chown -R cronos:cronos /home/cronos
 USER root
 
 ENTRYPOINT ["/home/cronos/bin/cronosd"]
+
