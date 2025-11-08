@@ -8,8 +8,8 @@ RUN mkdir -p /home/cronos/data && mkdir -p /home/cronos/config
 RUN apt-get update -y && apt-get install wget curl procps net-tools jq lz4 -y
 
 # Download and verify tarball
-RUN cd /tmp && wget --no-check-certificate https://github.com/crypto-org-chain/cronos/releases/download/v1.5.1/cronos_1.5.1_Linux_x86_64.tar.gz && tar -xvf cronos_1.5.1_Linux_x86_64.tar.gz \
-     && rm cronos_1.5.1_Linux_x86_64.tar.gz && mv ./* /home/cronos/
+RUN cd /tmp && wget --no-check-certificate https://github.com/crypto-org-chain/cronos/releases/download/v1.5.3/cronos_1.5.3_Linux_x86_64.tar.gz && tar -xvf cronos_1.5.3_Linux_x86_64.tar.gz \
+     && rm cronos_1.5.3_Linux_x86_64.tar.gz && mv ./* /home/cronos/
 
 # Set permissions
 RUN chown -R cronos:cronos /home/cronos && chmod 1777 /tmp
